@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2주차 과제</title>
+    <style>
+        body{background-color: skyblue;}
+        #top{
+            width:200px;
+            height:100px;
+            background-color: pink;
+            padding: 20px;
+            margin:20px;
+        }
+        #bottom{
+            width:200px;
+            height:100px;
+            background-color: lemonchiffon;
+            padding: 20px;
+            margin:20px;
+        }
+        #fixed {
+            background-color: yellowgreen;
+            height: 60px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        #front {
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            z-index: 1;
+        }
+        #back {
+            background-color: lemonchiffon;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            z-index: 2;
+        }
+        #container {
+            background-color: skyblue;
+            display: flex;
+            flex-direction: row;
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>    
+<body>
+    <br>
+    <ul>
+        <li></li>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        <li></li>
+        <li></li>
+    </ul>
+    <h2>회원가입</h2> 
+    <form action="http://www.naver.com" method="get">
+        <div><label for="ueserid"> ID:</label>
+        <input type="text" id="userid"name="id" placeholder="ID 입력"></div> 
+        <div><label for="password"> PS:</label>
+        <input type="password" id="password"name="password" placeholder="PS 입력"></div> 
+   <div>
+        <label for="job">직업: </label>
+        <select name ="job" id ="job">
+            <option value="student">학생</option>
+            <option vlaue="teacher">선생님</option>
+            </select>
+    </div>
+    <div>
+        <label for="introduce">자기소개: </label>
+        <textarea name="introduce" id="introduce" 
+            cols="30" rows="10" placeholder="자기소개를 입력하세요.">
+        </textarea>
+    </div>
+    <div>
+        <button type="submit">제출</button><br>
+        <button type="reset">reset</button>
+    </div>
+    <div id= "top">
+        top
+    </div>
+    <div id="bottom">
+        bottom
+    </div>
+    <div id="fixed">
+        fix
+    </div>
+    <div>
+    <div id="front">
+        front
+    </div>
+    <div id="back">
+        back
+    </div>
+    <div>
+        <div id="container">
+        <div id="one" class="item">1</div>
+        <div id="two" class="item">2</div>
+        <div id="three" class="item">3</div>
+    </div>
+</body>
+</html>
